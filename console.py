@@ -11,9 +11,8 @@ class HBNBCommand(cmd.Cmd):
         """Quit command to exit the program"""
         return True
 
-    def do_exit(self, arg):
+    def do_EOF(self, arg):
         """Exit the program when EOF is reached"""
-        print("")
         return True
 
 
