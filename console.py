@@ -4,15 +4,15 @@ import cmd
 
 
 class HBNBCommand(cmd.Cmd):
-    """hbnb  command line interface."""
+    """ HBNH console """
     prompt = '(hbnb) '
+
+    def do_EOF(self, arg):
+        """Exits console"""
+        return True
 
     def do_quit(self, arg):
         """Quit command to exit the program"""
-        return True
-
-    def do_EOF(self, arg):
-        """Exit the program when EOF is reached"""
         return True
 
 
